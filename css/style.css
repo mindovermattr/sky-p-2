@@ -409,7 +409,7 @@ body {
   .header {
     height: 648px;
     margin-bottom: 0;
-    background-image: url("/img/svg/starmobile1.svg"), url("/img/svg/starmobile2.svg"), url("/img/svg/starmobile3.svg");
+    background-image: url("../img/svg/starmobile1.svg"), url("../img/svg/starmobile2.svg"), url("../img/svg/starmobile3.svg");
     background-position: calc(93% + 92px) calc(-1% - 80px), 13% 11%, 90% 95%;
     background-repeat: no-repeat;
   }
