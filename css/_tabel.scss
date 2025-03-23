@@ -1,0 +1,48 @@
+@media (max-width: 1240px) {
+	.center {
+		padding-inline: 60px;
+	}
+
+	.header {
+		.center {
+			background-position: calc(65% + 260px) calc(50% - 130px);
+		}
+	}
+
+	.main {
+		.about {
+			background-position: calc(65%) calc(0%);
+
+			.section-cards {
+				grid-template-columns: repeat(2, 1fr);
+				align-items: stretch;
+				row-gap: 32px;
+
+				.about__card {
+					align-self: stretch;
+					width: 100%;
+
+					.about__card-body {
+						display: block;
+
+						&>img {
+							width: 100%;
+						}
+
+						.about__card-title {
+							padding-bottom: 40px;
+						}
+					}
+				}
+			}
+		}
+
+		.mini {
+			.mini__card {
+				.mini__card-title {
+					width: 300px;
+				}
+			}
+		}
+	}
+}

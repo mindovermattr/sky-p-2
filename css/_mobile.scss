@@ -1,0 +1,182 @@
+@media (max-width: 768px) {
+
+	.center {
+		padding-left: 17px;
+		padding-right: 16px;
+	}
+
+	.button {
+		max-width: 17.812rem;
+		height: 3.437rem;
+		font-size: 1rem;
+
+		&:hover {
+			color: #ffffff;
+			border: inherit;
+			background-color: #202027;
+		}
+	}
+
+	.header {
+		height: 648px;
+		margin-bottom: 0;
+		background-image: url("/img/svg/starmobile1.svg"), url("/img/svg/starmobile2.svg"), url("/img/svg/starmobile3.svg");
+		background-position: calc(93% + 92px) calc(-1% - 80px),
+			13% 11%,
+			90% 95%;
+		background-repeat: no-repeat;
+
+
+		&__btn {
+			width: 17.437rem;
+		}
+
+		.center {
+			background-image: none;
+		}
+
+		.header__container {
+			align-items: center;
+			padding-block: 144px 94px;
+			overflow: hidden;
+
+			.box-title {
+				max-width: 497px;
+				padding-top: 22px;
+				margin-bottom: 46px;
+
+
+				.title {
+					font-size: 2.5rem;
+					line-height: 49px;
+					text-align: center;
+				}
+
+				.desc {
+					margin-top: 31px;
+					font-size: 1rem;
+					line-height: 20px;
+					text-align: center;
+					max-width: 339px;
+				}
+			}
+		}
+	}
+
+
+
+	.nav {
+		max-width: 1717px;
+		height: 52px;
+
+		overflow: hidden;
+
+		&__list {
+			column-gap: 27px;
+		}
+
+		&__item {
+			column-gap: 27px;
+
+			&>a {
+				font-size: 1rem;
+			}
+
+			&__stars {
+				width: 19px;
+			}
+		}
+	}
+
+
+
+	.main {
+		.about {
+			display: none;
+		}
+
+		.mini {
+			padding-block: 48px;
+			background-image: none;
+
+			.title-section {
+				font-size: 2.5rem;
+				line-height: 49px;
+			}
+
+			.mini__cards {
+				padding-top: 48px;
+				row-gap: 24px;
+
+				.mini__card {
+					flex-direction: column-reverse;
+					width: 100%;
+					height: 567px;
+					justify-content: space-between;
+
+					&:nth-child(even) {
+						flex-direction: column-reverse;
+					}
+
+					&:nth-child(1) {
+						height: 527px;
+					}
+
+					&:nth-child(2) {
+						height: 569px;
+					}
+
+					&:nth-child(3) {
+						height: 566px;
+					}
+
+					&:nth-child(4) {
+						height: 530px;
+					}
+
+					&:nth-child(5) {
+						height: 606px;
+					}
+
+					&:nth-child(6) {
+						height: 627px;
+					}
+
+
+					.mini__card-content {
+						row-gap: 1px;
+						margin: 30px 30px 33px 30px;
+
+
+						.mini__card-title {
+							max-width: 299px;
+							display: block;
+							font-size: 2rem;
+							line-height: 38px;
+							margin-bottom: 16px;
+						}
+
+						.mini__card-desc {
+							font-size: 1rem;
+							margin-bottom: 30px;
+							line-height: 21px;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+	.footer {
+		height: 100px;
+
+		.footer__info {
+			font-size: 1rem;
+			padding-block: 40px;
+		}
+	}
+}

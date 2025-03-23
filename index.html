@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Мини-приложения</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="center">
+        <div class="header__container">
+          <div class="box-title">
+            <h1 class="title">Добро пожаловать<br />на мой сайт мини-игр</h1>
+            <div class="desc">
+              Тебе предстоит пройти несколько увлекательных игр. Если готов,
+              нажимай <b>«Поехали!»</b> и <b>приступай.</b>
+            </div>
+          </div>
+          <a class="button header__btn" href="#go">Поехали!</a>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="nav__progress-bar">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link-app" href="#game4">ВИКТОРИНА</a>
+            <span class="nav__stars"></span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link-app" href="#game1">УГАДАЙ ЧИСЛО</a>
+            <span class="nav__stars"></span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link-app" href="#game3">ПЕРЕВЕРНИ ТЕКСТ</a>
+            <span class="nav__stars"></span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link-app" href="#game2">ПРОСТАЯ АРИФМЕТИКА</a>
+            <span class="nav__stars"></span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link-app" href="#game5">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</a>
+            <span class="nav__stars"></span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link-app" href="#game6"
+              >ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</a
+            >
+            <span class="nav__stars"></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main" id="backgroundBlock">
+      <section class="about center">
+        <div class="about__header">
+          <div class="box-title">
+            <h2 class="title title-section">Об играх</h2>
+            <p class="desc desc-section">
+              В моей коллекции представлено 6 игр на разные темы.<br />Игры
+              несложные — в них может поиграть каждый. <br />Все игры доступны
+              для пользования.
+            </p>
+          </div>
+        </div>
+        <div class="section-cards">
+          <article class="about__card">
+            <a class="about__card-body" href="#game1">
+              <img class="about__img" src="./img/about/2.jpeg" alt="Игра №1" />
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №1</p>
+                <h2 class="about__card-title">Угадай число</h2>
+              </div>
+            </a>
+          </article>
+          <article class="about__card">
+            <a class="about__card-body" href="#game2">
+              <img class="about__img" src="./img/about/1.jpeg" alt="Игра №2" />
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №2</p>
+                <h2 class="about__card-title">Простая арифметика</h2>
+              </div>
+            </a>
+          </article>
+          <article class="about__card">
+            <a class="about__card-body" href="#game3">
+              <img class="about__img" src="./img/about/3.jpeg" alt="Игра №3" />
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №3</p>
+                <h2 class="about__card-title">Переверни текст</h2>
+              </div>
+            </a>
+          </article>
+          <article class="about__card">
+            <a class="about__card-body" href="#game5">
+              <img class="about__img" src="./img/about/4.jpeg" alt="Игра №4" />
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №4</p>
+                <h2 class="about__card-title">Камень, ножницы, бумага</h2>
+              </div>
+            </a>
+          </article>
+          <article class="about__card">
+            <a class="about__card-body" href="#game4">
+              <img class="about__img" src="./img/about/5.jpeg" alt="Игра №5" />
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №5</p>
+                <h2 class="about__card-title">Простая викторина</h2>
+              </div>
+            </a>
+          </article>
+          <article class="about__card">
+            <a class="about__card-body" href="#game6">
+              <img class="about__img" src="./img/about/6.jpeg" alt="Игра №6" />
+              <div class="about__card-box">
+                <p class="about__card-btn">Игра №6</p>
+                <h2 class="about__card-title">Генератор случайных цветов</h2>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <section class="mini center" id="go">
+        <h2 class="title title-section">Мини-игры</h2>
+        <div class="mini__cards">
+          <article class="mini__card" id="game1">
+            <div class="mini__card-content">
+              <h3 class="mini__card-title">Угадай число</h3>
+              <p class="mini__card-desc">
+                Попробуй угадать случайное число от 1 до 100.
+              </p>
+              <button
+                class="button mini__card-btn"
+                href="#"
+                onclick="onClickRandom()"
+              >
+                Играть!
+              </button>
+            </div>
+            <img src="./img/mini/1.jpeg" alt="Угадай число" />
+          </article>
+          <article class="mini__card" id="game2">
+            <div class="mini__card-content">
+              <h3 class="mini__card-title">Простая арифметика</h3>
+              <p class="mini__card-desc">
+                Попробуй решить простые арифметические задачи.
+              </p>
+              <button
+                class="button mini__card-btn"
+                href="#"
+                onclick="onClickMathGame()"
+              >
+                Играть!
+              </button>
+            </div>
+            <img src="./img/mini/2.jpeg" alt="Простая арифметика" />
+          </article>
+          <article class="mini__card" id="game3">
+            <div class="mini__card-content">
+              <h3 class="mini__card-title">Переверни текст</h3>
+              <p class="mini__card-desc">
+                Попробуй ввести текст, который будет перевернут.
+              </p>
+              <button
+                class="button mini__card-btn"
+                href="#"
+                onclick="reversedText()"
+              >
+                Играть!
+              </button>
+            </div>
+            <img src="./img/mini/3.jpeg" alt="Переверни текст" />
+          </article>
+          <article class="mini__card" id="game4">
+            <div class="mini__card-content">
+              <h3 class="mini__card-title">Викторина</h3>
+              <p class="mini__card-desc">
+                Отвечай на вопросы викторины с вариантами ответов.
+              </p>
+              <button class="button mini__card-btn" href="#" onclick="quiz()">
+                Играть!
+              </button>
+            </div>
+            <img src="./img/mini/4.jpeg" alt="Викторина" />
+          </article>
+          <article class="mini__card" id="game5">
+            <div class="mini__card-content">
+              <h3 class="mini__card-title">Камень, ножницы, бумага</h3>
+              <p class="mini__card-desc">
+                Сыграй в популярную игру против компьютера.
+              </p>
+              <button
+                class="button mini__card-btn"
+                href="#"
+                onclick="gameRockPaperScissors()"
+              >
+                Играть!
+              </button>
+            </div>
+            <img src="./img/mini/5.jpeg" alt="Камень, ножницы, бумага" />
+          </article>
+          <article class="mini__card" id="game6">
+            <div class="mini__card-content">
+              <h3 class="mini__card-title">Генератор случайных цветов</h3>
+              <p class="mini__card-desc">
+                Игра, в которой при клике на кнопку фон страницы меняется на
+                случайный.
+              </p>
+              <button
+                class="button mini__card-btn"
+                href="#"
+                id="colorGameButton"
+              >
+                Играть!
+              </button>
+            </div>
+            <img src="./img/mini/6.jpeg" alt="Генератор случайных цветов" />
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h4 class="footer__info">Все права защищены.</h4>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
